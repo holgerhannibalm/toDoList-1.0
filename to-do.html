@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do list</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <div id="toDoHeader">
+        <h1>To-do Liste, </h1>
+        <h6> af: Holger Milthers / Roskilde Handelsskole</h6>
+    </div>
+    <div class="border" class="collapseBorder">
+        <div class="header">
+            <input class="input" id="inputField" onfocusout="listItem(this)" type="text" placeholder="Tilføj din to-do"/>
+            <button type="submit" onsubmit="return checkForBlank()">Tilføj</button>
+            <button type="reset" onclick="resetResult()">Reset</button>
+
+            <div>
+                <div id="venstre">
+                </div>
+                <div id="højre">
+                    <p id="result"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
